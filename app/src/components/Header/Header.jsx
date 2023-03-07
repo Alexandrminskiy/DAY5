@@ -1,10 +1,12 @@
-import headerStyles from  './header.module.css'
+import { Form } from './components/Form/Form'
+import headerStyles from './header.module.css'
 
-export const Header = () => {
-
-console.log({headerStyles})
+export const Header = ({ addNewTodo }) => {
+    
 
     return (
-        <header className={headerStyles.wr}>Header</header>
+        <header className={headerStyles.wr}>
+            <Form addNewTodo={addNewTodo} />
+        </header>
     )
 }
