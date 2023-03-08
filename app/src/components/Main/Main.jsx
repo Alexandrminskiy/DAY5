@@ -1,5 +1,9 @@
-export const Main = () => {
+import { TodoList } from "../TodoList/TodoList"
+
+export const Main = ({todos,changeStatusTodo, deleteTodo}) => {
     return (
-        <main>Main</main>
+        <main>
+        <TodoList changeStatusTodo={changeStatusTodo} deleteTodo={deleteTodo} todos={todos} />
+    </main>
     )
 }
